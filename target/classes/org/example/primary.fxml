@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="452.0" prefWidth="400.0" style="-fx-background-color: #F4F7FB;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.PrimaryController">
+   <children>
+      <Button fx:id="button" layoutX="180.0" layoutY="185.0" mnemonicParsing="false" onAction="#getWeather" prefHeight="32.0" prefWidth="102.0" style="-fx-background-color: #009A3F; -fx-border-color: #009842; -fx-border-radius: 6px;" stylesheets="@../../../../../../../github/TranslatorAPI_Spring_JavaFx/src/main/resources/org/example/styles/main.css" text="GO" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <AnchorPane layoutX="1.0" prefHeight="68.0" prefWidth="461.0" style="-fx-background-color: #fff;">
+         <effect>
+            <DropShadow color="#0000001f" />
+         </effect>
+         <children>
+            <Text fill="#434343" layoutX="143.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Weather" textAlignment="CENTER" wrappingWidth="175.0">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="cityInput" layoutX="111.0" layoutY="127.0" prefHeight="38.0" prefWidth="241.0">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <Text fx:id="enterCityPlainText" layoutX="127.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter your city" textAlignment="CENTER" wrappingWidth="208.0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text fx:id="label_temp" layoutX="30.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Temp:" wrappingWidth="77.0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text fx:id="label_feels" layoutX="30.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Feels:" wrappingWidth="77.0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text fx:id="label_min" layoutX="30.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Min:" wrappingWidth="77.0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text fx:id="label_max" layoutX="30.0" layoutY="381.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Max:" wrappingWidth="77.0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text fx:id="label_desc" layoutX="30.0" layoutY="417.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Desc:" wrappingWidth="77.0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text fx:id="temp" layoutX="106.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="166.0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text fx:id="feels" layoutX="105.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="166.0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text fx:id="min" layoutX="106.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="166.0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text fx:id="max" layoutX="105.0" layoutY="381.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="166.0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text fx:id="description" layoutX="105.0" layoutY="417.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="166.0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="image" fitHeight="108.0" fitWidth="144.0" layoutX="290.0" layoutY="273.0" pickOnBounds="true" preserveRatio="true" />
+      <Text fx:id="notFound" fill="#9e0a0a" layoutX="111.0" layoutY="332.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="241.0">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
