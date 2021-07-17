@@ -6,14 +6,13 @@ import java.util.*;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.shape.Shape;
 import javafx.scene.text.Text;
 import org.example.configuration.MyConfig;
-import org.example.service.CityNotFoundException;
+import org.example.error.CityNotFoundException;
 import org.example.service.WeatherFinderAPI;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
